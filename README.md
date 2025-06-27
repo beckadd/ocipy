@@ -1,4 +1,4 @@
-# ocipy: OCI Python Packaging Tool
+# 📦 ocipy: OCI Python Packaging Tool
 
 [![CI/CD](https://github.com/beckadd/ocipy/actions/workflows/ci.yml/badge.svg)](https://github.com/beckadd/ocipy/actions/workflows/ci.yml)
 
