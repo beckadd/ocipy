@@ -67,23 +67,6 @@ theme:
 # Navigation
 nav:
   - Home: index.md
-  - Getting Started:
-    - Installation: getting-started/installation.md
-    - Quick Start: getting-started/quickstart.md
-    - Configuration: getting-started/configuration.md
-  - User Guide:
-    - Publishing Packages: user-guide/publishing.md
-    - Installing Packages: user-guide/installing.md
-    - Registry Management: user-guide/registries.md
-  - Reference:
-    - CLI Commands: reference/cli.md
-    - Configuration Options: reference/config.md
-    - API Reference: reference/api.md
-  - About:
-    - Changelog: about/changelog.md
-    - Versioning: about/versioning.md
-    - Contributing: about/contributing.md
-    - License: about/license.md
 
 # Plugins
 plugins:

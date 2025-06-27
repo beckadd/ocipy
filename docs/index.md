@@ -70,9 +70,6 @@ ocipy transforms your Python packages into OCI-compliant artifacts, enabling you
 
 ## Getting Started
 
-!!! info "Documentation Versioning"
-    This documentation uses [Mike](https://github.com/jimporter/mike) for version management. You can switch between different versions of the documentation using the version selector in the navigation bar. Each version corresponds to a specific release of ocipy.
-
 <div class="md-typeset">
   <div class="md-button-group">
     <a href="getting-started/installation/" class="md-button md-button--primary">
@@ -89,11 +86,6 @@ ocipy transforms your Python packages into OCI-compliant artifacts, enabling you
 
 ## Community & Support
 
-- **GitHub**: [Report issues and contribute](https://github.com/your-username/ocipy)
+- **GitHub**: [Report issues and contribute](https://github.com/beckadd/ocipy)
 - **Documentation**: Comprehensive guides and API reference
 - **Examples**: Real-world usage patterns and best practices
-
----
-
-!!! info "About OCI"
-    The [Open Container Initiative (OCI)](https://opencontainers.org/) is an open governance structure for creating open industry standards around container formats and runtimes. By using OCI registries for Python packages, you get enterprise-grade security, scalability, and tooling.
