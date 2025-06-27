@@ -1,7 +1,7 @@
 site_name: ocipy
 site_description: OCI Python Packaging Tool - Publish and install Python packages using OCI registries
-site_url: https://your-docs-site.com
-repo_url: https://github.com/your-username/ocipy
+site_url: https://beckadd.github.io/ocipy
+repo_url: https://github.com/beckadd/ocipy
 repo_name: ocipy
 edit_uri: edit/main/docs/
 
@@ -64,10 +64,6 @@ theme:
     edit: material/pencil
     view: material/eye
 
-# Custom CSS
-extra_css:
-  - stylesheets/extra.css
-
 # Navigation
 nav:
   - Home: index.md
@@ -98,7 +94,7 @@ plugins:
       alias_type: symlink
       redirect_template: null
       deploy_prefix: ''
-      canonical_version: null
+      canonical_version: latest
       version_selector: true
       css_dir: css
       javascript_dir: js
