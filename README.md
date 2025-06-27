@@ -1,5 +1,7 @@
 # ocipy: OCI Python Packaging Tool
 
+[![CI/CD](https://github.com/beckadd/ocipy/actions/workflows/ci.yml/badge.svg)](https://github.com/beckadd/ocipy/actions/workflows/ci.yml)
+
 `ocipy` allows you to publish and install Python packages using [OCI (Open Container Initiative) registries](https://opencontainers.org/). It provides a simple command-line interface to build, publish, and install Python packages as OCI images.
 
 This is particularly useful for organizations that want to leverage their existing OCI registries' capabilities for versioning, distribution, and security of Python packages without having to setup complicated proxy infrastructure to support PyPI-based registries.
