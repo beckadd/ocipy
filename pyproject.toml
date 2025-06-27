@@ -1,27 +1,86 @@
 [project]
 name = "ocipy"
 description = "OCI Python client for interacting with OCI artifacts"
+license = "Apache-2.0"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = [
-    "oras",
-]
+dependencies = ["oras", "typer>=0.16.0"]
 
 dynamic = ["version"]
 
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Archiving :: Packaging",
+    "Topic :: System :: Software Distribution",
+    "Topic :: Utilities",
+]
+
+keywords = [
+    "oci",
+    "container",
+    "registry",
+    "packaging",
+    "distribution",
+    "artifacts",
+    "docker",
+    "oras",
+    "python-packages",
+    "build-tools",
+    "devops",
+    "ci-cd",
+    "container-registry",
+    "package-management",
+    "software-distribution",
+]
+
 [dependency-groups]
+docs = [
+    "mike",
+    "mkdocs",
+    "mkdocs-git-revision-date-localized-plugin",
+    "mkdocs-material",
+    "mkdocs-minify-plugin",
+]
 lint = [
     "mypy",
     "ruff",
 ]
 test = [
+    "hypothesis",
     "pytest",
     "pytest-cov",
 ]
 
 [project.scripts]
-ocipy = "ocipy:main"
+ocipy = "ocipy.cli:cli"
 
 [build-system]
 requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[project.urls]
+homepage = "https://beckadd.github.io/ocipy"
+documentation = "https://beckadd.github.io/ocipy"
+repository = "https://github.com/beckadd/ocipy"
+issues = "https://github.com/beckadd/ocipy/issues"

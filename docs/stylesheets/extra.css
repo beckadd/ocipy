@@ -1,0 +1,257 @@
+/* ORAS-inspired custom styling for ocipy documentation */
+
+:root {
+  /* ORAS-inspired color palette */
+  --md-primary-fg-color: #1976d2;
+  --md-primary-fg-color--light: #42a5f5;
+  --md-primary-fg-color--dark: #1565c0;
+  --md-accent-fg-color: #00bcd4;
+  --md-accent-fg-color--transparent: #00bcd41a;
+  
+  /* Custom gradients */
+  --oras-gradient: linear-gradient(135deg, #1976d2 0%, #00bcd4 100%);
+  --oras-gradient-subtle: linear-gradient(135deg, #e3f2fd 0%, #e0f7fa 100%);
+}
+
+[data-md-color-scheme="slate"] {
+  /* Dark mode ORAS-inspired colors */
+  --md-primary-fg-color: #64b5f6;
+  --md-primary-fg-color--light: #90caf9;
+  --md-primary-fg-color--dark: #42a5f5;
+  --md-accent-fg-color: #26c6da;
+  --md-accent-fg-color--transparent: #26c6da1a;
+  
+  /* Dark mode gradients */
+  --oras-gradient: linear-gradient(135deg, #1976d2 0%, #26c6da 100%);
+  --oras-gradient-subtle: linear-gradient(135deg, #263238 0%, #37474f 100%);
+}
+
+/* Hero section styling */
+.md-typeset h1:first-child {
+  background: var(--oras-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+/* Enhanced code blocks */
+.md-typeset .highlight {
+  background: var(--md-code-bg-color);
+  border-radius: 0.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .highlight {
+  border-color: var(--md-default-fg-color--lighter);
+}
+
+/* Custom admonition styles */
+.md-typeset .admonition.tip {
+  border-color: var(--md-accent-fg-color);
+}
+
+.md-typeset .admonition.tip > .admonition-title {
+  background-color: var(--md-accent-fg-color--transparent);
+  border-color: var(--md-accent-fg-color);
+}
+
+/* Navigation tabs enhancement */
+.md-tabs {
+  background: var(--oras-gradient);
+}
+
+.md-tabs__item {
+  color: white;
+  opacity: 0.8;
+}
+
+.md-tabs__item--active,
+.md-tabs__item:hover {
+  opacity: 1;
+  color: white;
+}
+
+/* Footer styling */
+.md-footer {
+  background: var(--oras-gradient);
+}
+
+/* Custom button styling */
+.md-button {
+  background: transparent;
+  border: 1px solid var(--md-primary-fg-color);
+  color: var(--md-primary-fg-color);
+  transition: all 0.3s ease;
+  border-radius: 0.375rem;
+  text-decoration: none;
+}
+
+.md-button:hover {
+  background: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.3);
+}
+
+.md-button--primary {
+  background: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: white;
+}
+
+.md-button--primary:hover {
+  background: var(--md-primary-fg-color--dark);
+  border-color: var(--md-primary-fg-color--dark);
+  color: white;
+}
+
+/* Dark mode button adjustments */
+[data-md-color-scheme="slate"] .md-button {
+  border-color: var(--md-primary-fg-color--light);
+  color: var(--md-primary-fg-color--light);
+}
+
+[data-md-color-scheme="slate"] .md-button:hover {
+  background: var(--md-primary-fg-color--light);
+  border-color: var(--md-primary-fg-color--light);
+  color: var(--md-default-bg-color);
+  box-shadow: 0 2px 8px rgba(100, 181, 246, 0.3);
+}
+
+[data-md-color-scheme="slate"] .md-button--primary {
+  background: var(--md-primary-fg-color--light);
+  border-color: var(--md-primary-fg-color--light);
+  color: var(--md-default-bg-color);
+}
+
+[data-md-color-scheme="slate"] .md-button--primary:hover {
+  background: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: white;
+}
+
+/* Search box enhancement */
+.md-search__input {
+  border-radius: 0.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-default-bg-color);
+  transition: all 0.2s ease;
+}
+
+.md-search__input:focus {
+  border-color: var(--md-primary-fg-color);
+  outline: none;
+  box-shadow: none;
+}
+
+.md-search__input::placeholder {
+  color: var(--md-default-fg-color--light);
+}
+
+/* Table styling */
+.md-typeset table:not([class]) {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--md-default-fg-color--lightest);
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: var(--md-default-fg-color--lighter);
+}
+
+/* Links styling */
+.md-typeset a {
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.md-typeset a:hover {
+  border-bottom-color: var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color);
+}
+
+/* Custom icons */
+.md-typeset .twemoji {
+  filter: hue-rotate(200deg) saturate(1.2);
+}
+
+/* Responsive design enhancements */
+@media screen and (max-width: 76.1875em) {
+  .md-nav__source {
+    background: var(--oras-gradient);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--md-default-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--md-primary-fg-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--md-primary-fg-color--dark);
+}
+
+/* Animation for page transitions */
+.md-content {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom badge styling */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--md-primary-fg-color);
+  color: white;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+/* Version selector styling */
+.md-version {
+  background: var(--md-primary-fg-color);
+  border-radius: 0.25rem;
+}
+
+.md-version__current {
+  color: white;
+}
+
+/* Search highlighting */
+.md-search-result__teaser mark {
+  background: var(--md-accent-fg-color--transparent);
+  color: var(--md-accent-fg-color);
+}
