@@ -67,6 +67,7 @@ test = [
     "hypothesis",
     "pytest",
     "pytest-cov",
+    "tomlkit>=0.13.3",
 ]
 
 [project.scripts]
